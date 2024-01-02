@@ -18,4 +18,5 @@ raw_audio_path = 'C:/Users/Asus/OneDrive/Escritorio/MapaDeVoces/Prototipos/Proto
 chunk_storage_directory = 'C:/Users/Asus/OneDrive/Escritorio/MapaDeVoces/Prototipos/Prototipo3/AudiosPrototipo3'
 min_silence_len = 500 # must be silent for at least half a second
 silence_thresh = 15 # consider it silent if quieter than -16 dBFS    
-WordSplitter(chunk_name,raw_audio_path,min_silence_len,silence_thresh)
+WordSplitter(chunk_name,raw_audio_path,chunk_storage_directory,min_silence_len,silence_thresh)
+
