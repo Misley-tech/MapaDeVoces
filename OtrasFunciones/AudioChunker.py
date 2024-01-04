@@ -9,7 +9,7 @@ def AudioChunker(file_name,raw_audio_path,chunk_storage_directory,min_silence_le
             raw_audio_path (str): path donde esta el archivo a ser seccionado.
             chunk_storage_directory (str): path donde se va a ubicar el archivo seccionado.
             min_silence_len (int): cualquier silencio que dure mas que este valor es recortado.
-            silence_thresh (float): cualquier nivel que es menor que este ubral es considerado silencio.
+            silence_thresh (float): cualquier nivel que es menor que este umbral es considerado silencio.
     """
     sound_file = AudioSegment.from_wav(raw_audio_path)
     audio_chunks = split_on_silence(
